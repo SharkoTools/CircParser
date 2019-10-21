@@ -16,3 +16,4 @@ based on their structural components (exonic, intronic, exon-intronic or interge
 -  --np            prohibition for coordinates merging (optional)
 -  --threads       number of threads (CPUs) for BLAST search (default: 8)
 -  -h,--help       show this help message and exit
+-  --version,-v    current version
