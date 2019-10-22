@@ -5,7 +5,11 @@ CircParser: a novel streamlined pipeline for circular RNA structure and host gen
 presumable host genes from local or public databases such as National Center for Biotechnology Information (NCBI). Also this pipeline can discriminate circular RNAs
 based on their structural components (exonic, intronic, exon-intronic or intergenic) using genome annotation file.
 
- 
+
+# Requirements:
+-
+-
+-
 
 # Command line:
 -  -b              circRNA input file (required)
