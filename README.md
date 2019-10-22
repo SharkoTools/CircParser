@@ -7,9 +7,9 @@ based on their structural components (exonic, intronic, exon-intronic or interge
 
 
 # Requirements:
--
--
--
+- Perl
+- Samtools
+- Bedtools
 
 # Command line:
 -  -b              circRNA input file (required)
