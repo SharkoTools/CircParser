@@ -8,10 +8,62 @@ based on their structural components (exonic, intronic, exon-intronic or interge
 
 # Dependencies and requirements:
 Operating system: Linux only.
+
 You need:
-- Perl
-- Samtools
+- Samtools: We recommend the newests versions of SAMtools (e.g. > 1.4.1)
 - Bedtools
+- Blast
+
+# Installation
+Install dependencies, you can skip this step if these packages are already installed on your system
+
+- Samtools: 
+
+            1. wget https://github.com/samtools/samtools/releases/download/1.4.1/samtools-1.4.1.tar.bz2 -O samtools.tar.bz2
+            2. tar -xjvf samtools.tar.bz2 
+            3. cd samtools-1.4.1/
+            4. ./configure
+            5. make
+            6. make install
+ 
+- Bedtools: 
+
+            1. wget https://github.com/arq5x/bedtools2/releases/download/v2.28.0/bedtools-2.28.0.tar.gz
+            2. tar -zxvf bedtools-2.28.0.tar.gz
+            3. cd bedtools2
+            4. ./configure
+            5. make
+            
+- Blast: 
+
+Get the compiled executables from this URL:
+
+```
+ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
+```
+
+Decompress the archive. For example:
+
+```
+tar xvfz ncbi-blast-2.9.0+-x64-linux.tar.gz
+```
+
+Add the `bin` folder from the extracted archive to your path. For example, add
+the following line to your `~/.bashrc` file:
+
+```
+export PATH="/PATH/TO/ncbi-blast-2.9.0+/bin":$PATH
+```
+
+And change the `/PATH/TO` part to the path where you have put the extracted
+archive.
+
+- CircParser:
+
+Download the program like this:
+```
+git clone https://github.com/kosaidtu/norgal.git 
+```           
 
 # Command line:
 -  -b              circRNA input file (required)
