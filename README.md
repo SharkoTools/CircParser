@@ -6,7 +6,7 @@ presumable host genes from local or public databases such as National Center for
 based on their structural components (exonic, intronic, exon-intronic or intergenic) using genome annotation file.
 
 
-# Dependencies and requirements:
+## Dependencies and requirements
 Operating system: Linux only.
 
 You need:
@@ -14,10 +14,10 @@ You need:
 - Bedtools
 - Blast
 
-# Installation
+## Installation
 Install dependencies, you can skip this step if these packages are already installed on your system
 
-- Samtools: 
+- Samtools 
 
             1. wget https://github.com/samtools/samtools/releases/download/1.4.1/samtools-1.4.1.tar.bz2 -O samtools.tar.bz2
             2. tar -xjvf samtools.tar.bz2 
@@ -26,7 +26,7 @@ Install dependencies, you can skip this step if these packages are already insta
             5. make
             6. make install
  
-- Bedtools: 
+- Bedtools 
 
             1. wget https://github.com/arq5x/bedtools2/releases/download/v2.28.0/bedtools-2.28.0.tar.gz
             2. tar -zxvf bedtools-2.28.0.tar.gz
@@ -34,7 +34,7 @@ Install dependencies, you can skip this step if these packages are already insta
             4. ./configure
             5. make
             
-- Blast: 
+- Blast 
 
 Get the compiled executables from this URL:
 
@@ -58,14 +58,17 @@ export PATH="/PATH/TO/ncbi-blast-2.9.0+/bin":$PATH
 And change the `/PATH/TO` part to the path where you have put the extracted
 archive.
 
-- CircParser:
+## Download CircParser
 
 Download the program like this:
 ```
-git clone https://github.com/kosaidtu/norgal.git 
+git clone https://github.com/SharkoTools/CircParser.git
 ```           
 
-# Command line:
+## Usage
+
+
+## Command line
 -  -b              circRNA input file (required)
 -  -g,--genome     reference genome file (required)
 -  -t,--tax        NCBI TaxID (optional)
