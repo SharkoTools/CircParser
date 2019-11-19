@@ -67,6 +67,15 @@ git clone https://github.com/SharkoTools/CircParser.git
 
 ## Usage
 
+### Schema
+![Image alt](https://github.com/SharkoTools/CircParser/blob/master/Figure_1.png)
+
+
+### How to run
+```
+perl CircParser.pl [-h] -b INPUT_FILE –genome REF_GENOME
+```
+ 
 
 ## Command line
 -  -b              circRNA input file (required)
