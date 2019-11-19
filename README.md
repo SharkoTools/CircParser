@@ -6,7 +6,9 @@ presumable host genes from local or public databases such as National Center for
 based on their structural components (exonic, intronic, exon-intronic or intergenic) using genome annotation file.
 
 
-# Requirements:
+# Dependencies and requirements:
+- Operating system: Linux only.
+You need:
 - Perl
 - Samtools
 - Bedtools
