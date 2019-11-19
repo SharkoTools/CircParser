@@ -7,7 +7,7 @@ based on their structural components (exonic, intronic, exon-intronic or interge
 
 
 # Dependencies and requirements:
-- Operating system: Linux only.
+Operating system: Linux only.
 You need:
 - Perl
 - Samtools
