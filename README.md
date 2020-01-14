@@ -73,8 +73,31 @@ git clone https://github.com/SharkoTools/CircParser.git
 
 ### How to run
 ```
-perl CircParser.pl [-h] -b INPUT_FILE –genome REF_GENOME
+perl CircParser.pl -b INPUT_FILE_BED –genome REF_GENOME
+
+Enter the bin size for merge circleRNA: 0
+Enter the max blast results for each circleRNA (in case when TaxID is empty): 1
+
 ```
+The output is a file called `finish.table.sort.txt` with the following columns:
+
+* Gene ID
+* Gene coordinates start
+* Gene coordinates end
+* Host gene for circRNAs ID
+* Host gene for circRNAs
+* Number of circRNAs
+* Minimum size, bp
+* Maximum size, bp
+* Structure
+
+
+| Gene ID 	| Gene coordinates start 	| Gene coordinates end 	| Host gene for circRNAs ID 	| Host gene for circRNAs 	| Number of circRNAs 	| Minimum size, bp 	| Maximum size, bp 	| Structure 	|
+|-------------	|------------------------	|----------------------	|---------------------------------------	|---------------------------------------------------------------------------------------------------------------------------	|--------------------	|------------------	|------------------	|--------------------------------------------------------------------------------------------------------------------------	|
+| NC_031987.2 	| 3424075 	| 3424478 	| gi\|1434974748\|ref\|XM_025904114.1\| 	| PREDICTED: Oreochromis niloticus cyclin-T2 (LOC100698210), transcript variant X6, mRNA 	| 1 	| 432 	| 432 	| intron-exon-exon-intron- 	|
+| NC_031987.2 	| 33880079 	| 33880385 	| gi\|1434972051\|ref\|XM_025903599.1\| 	| PREDICTED: Oreochromis niloticus titin (LOC100702396), transcript variant X22, mRNA 	| 1 	| 337 	| 337 	| intron-exon- 	|
+| NC_031987.2 	| 27189185 	| 27201070 	| gi\|1434974608\|ref\|XM_005475351.3\| 	| PREDICTED: Oreochromis niloticus CD209 antigen-like protein A (LOC102078188), mRNA 	| 1 	| 11916 	| 11916 	| intron-exon-exon-intron- 	|
+| NC_031987.2 	| 22316258 	| 22317046 	| gi\|1434972940\|ref\|XM_005475492.4\| 	| PREDICTED: Oreochromis niloticus ABI family member 3 binding protein (abi3bp), transcript variant X4, mRNA 	| 1 	| 819 	| 819 	| exon-exon-intron-exon-intron- 	|
  
 
 ## Command line
