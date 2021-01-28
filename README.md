@@ -114,3 +114,8 @@ The output is a file called `finish.table.sort.txt` with the following columns:
 ## Cite this as
 
 Nedoluzhko A, Sharko F, Rbbani MG, Teslyuk A, Konstantinidis I, Fernandes JMO. 2020. CircParser: a novel streamlined pipeline for circular RNA structure and host gene prediction in non-model organisms. PeerJ 8:e8757 https://doi.org/10.7717/peerj.8757
+
+
+## Foundation
+
+CircParser development was partially supported by the Russian Foundation of Basic Research, grant RFBR 18-29-23020 mk
